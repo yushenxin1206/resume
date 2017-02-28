@@ -1,0 +1,159 @@
+/*   
+ * Template Name: Developer - Responsive Website Template for Developers
+ * Version: 1.5
+ * Author: Xiaoying Riley
+ * Twitter: @3rdwave_themes
+ * License: Creative Commons Attribution 3.0 License
+ * Website: http://themes.3rdwavemedia.com/
+*/
+/* ======= Base ======= */
+ body {
+  /* font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,
+				Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+  color: #434343; */
+  /*background: #DAE3E7;*/
+  background-color: #333; 
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #778492;
+} */
+a {
+  color: #3AAA64;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+  color: #2d844e;
+  cursor: pointer;
+}
+a:focus {
+  text-decoration: none;
+}
+
+/* ======= container======= */
+.container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* ==== resume ==== */
+.resume.myhidden{
+	width: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.resume{
+	background: #fff;
+	padding: 30px;
+	transition: all .6s;
+}
+.resume.myhover{
+	transform: scale(.8) translate(-25%,-15%);
+	filter: blur(2px);
+}
+/* ==== basic-info ==== */
+
+.basic-info{
+	overflow: hidden;
+}
+
+/* ==== typing ==== */
+.typing{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	height: 30vh;
+	margin-top: 30vh;
+	background-color: #002b36;
+	background-clip: content-box;
+	padding-left: 30px;
+	transition: all .6s;
+}
+
+.typing.myhover{
+	transform: scale(1.5) translateX(-25%);
+}
+.typing .typing-p{
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.typing .typing-p p{
+	width: max-content;
+	/* border-right: .05em solid transparent; */
+	white-space: nowrap;
+	overflow: hidden;
+}
+.typing .typing-a{
+	flex: 1;
+	padding: 10px 20px;
+}
+.typing .typing-a a{
+	padding: .2em .4em;
+	text-decoration: none;
+	transition: none;
+	position: relative;
+	transition: all .5s;
+}
+.typing .typing-a a:hover{
+	padding: .2em .8em;
+}
+.typing .typing-a .next{
+	width: max-content;
+}
+.typing .typing-a a::before,.typing .typing-a a::after{
+	content: "";
+	position: absolute;
+	width: .6em;
+	height: .6em;
+	border: 1px solid #58a;
+	transition: all .5s;
+}
+.typing .typing-a a.yes::before,.typing .typing-a a.next::before{
+	left: 0; top: 0;
+	border-bottom: 0;
+	border-right: 0;
+}
+.typing .typing-a a.yes::after,.typing .typing-a a.next::after{
+	right: 0; bottom: 0;
+	border-left: 0;
+	border-top: 0;
+}
+.typing .typing-a a.no::before{
+	left: 0; bottom: 0;
+	border-right: 0;
+	border-top: 0;
+}
+.typing .typing-a a.no::after{
+	right: 0; top: 0;
+	border-left: 0;
+	border-bottom: 0;
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  
+}
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+/* Ex-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+  .container {
+    width: 1360px;
+  }
+}
