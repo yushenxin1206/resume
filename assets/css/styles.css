@@ -144,6 +144,17 @@ a:focus {
 	border-bottom: 0;
 }
 
+/*=== 优化待选类 ===*/
+
+/*基本信息列表*/
+li.devider-right{
+	box-sizing: content-box;
+	padding-right: calc(1em + 5px); 
+	margin-right: 1em;
+	border-right: 1px solid transparent;
+	border-image: 40% 100% 40% 0 linear-gradient(transparent 40%,#aaa 40%,#aaa 60%,transparent 60%);
+}
+
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   
