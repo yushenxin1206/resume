@@ -11,13 +11,12 @@
   /* font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,
 				Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
   color: #434343; */
-  /*background: #DAE3E7;*/
   background-color: #333; 
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* h1,
+/*  h1,
 h2,
 h3,
 h4,
@@ -25,7 +24,7 @@ h5,
 h6 {
   font-weight: 700;
   color: #778492;
-} */
+}  */
 a {
   color: #3AAA64;
   -webkit-transition: all 0.4s ease-in-out;
@@ -62,6 +61,10 @@ a:focus {
 .resume.myhover{
 	transform: scale(.8) translate(-25%,-15%);
 	filter: blur(2px);
+}
+.resume hr.divider{
+	display: none;
+	color: #888;
 }
 /* ==== basic-info ==== */
 
@@ -147,12 +150,17 @@ a:focus {
 /*=== 优化待选类 ===*/
 
 /*基本信息列表*/
-li.devider-right{
+li.divider-right{
 	box-sizing: content-box;
 	padding-right: calc(1em + 5px); 
 	margin-right: 1em;
 	border-right: 1px solid transparent;
 	border-image: 40% 100% 40% 0 linear-gradient(transparent 40%,#aaa 40%,#aaa 60%,transparent 60%);
+}
+/*更换字体*/
+.change-font{
+	font-family: -apple-system,SF UI Display,Arial,PingFang SC,
+				 Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 }
 
 /* Extra small devices (phones, less than 768px) */
