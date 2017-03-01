@@ -64,14 +64,17 @@ a:focus {
 }
 .resume hr.divider{
 	display: none;
-	color: #888;
+	color: #778492;
 }
 /* ==== basic-info ==== */
 
 .basic-info{
 	overflow: hidden;
 }
-
+/* ==== skills ==== */
+.skills{
+	overflow: hidden;
+}
 /* ==== typing ==== */
 .typing{
 	display: flex;
@@ -161,6 +164,20 @@ li.divider-right{
 .change-font{
 	font-family: -apple-system,SF UI Display,Arial,PingFang SC,
 				 Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+}
+/*其他技能*/
+.other-skills{
+
+}
+.other-skills h3{
+	font-family: Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #778492;
+}
+.other-skills li{
+	margin: 20px 0;
+	font-size: 16px;
 }
 
 /* Extra small devices (phones, less than 768px) */
