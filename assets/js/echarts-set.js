@@ -61,7 +61,18 @@ function setEcharts(){
     ]
 };
 	myChart.setOption(option);
+	
 	$(window).resize(function(){
+		
+		/*设置图区宽高*/
+		var width=$(".edu-exp").width();
+		console.log(width);
+		$("#stats-echarts").height(0.5*width);
+		$("#stats-echarts").width(0.6*width);
+		/*设置其他技能区宽高*/
+		$(".other-skills").height(0.5*width);
+		$(".other-skills").width(0.4*width-5);
+		
 		myChart = echarts.init(statsEch);
 		myChart.setOption(option);
 	});

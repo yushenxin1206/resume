@@ -5,18 +5,19 @@
  * Twitter: @3rdwave_themes
  * License: Creative Commons Attribution 3.0 License
  * Website: http://themes.3rdwavemedia.com/
+ * 
+ * ReEdit by Zhou Tao
 */
 /* ======= Base ======= */
  body {
-  /* font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,
-				Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
-  color: #434343; */
+  font-family: SimSun, STSong, sans-serif;
+  /*color: #434343; */
   background-color: #333; 
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/*  h1,
+/*h1,
 h2,
 h3,
 h4,
@@ -49,6 +50,7 @@ a:focus {
 
 /* ==== resume ==== */
 .resume.myhidden{
+	height: 0;
 	width: 0;
 	padding: 0;
 	overflow: hidden;
@@ -77,11 +79,14 @@ a:focus {
 }
 /* ==== typing ==== */
 .typing{
+	font-family: -apple-system,SF UI Display,Arial,PingFang SC,
+				 Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 	display: flex;
 	flex-direction: column;
 	color: white;
 	height: 30vh;
 	margin-top: 30vh;
+	font-size: 90%; 
 	background-color: #002b36;
 	background-clip: content-box;
 	padding-left: 30px;
@@ -97,6 +102,8 @@ a:focus {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 0 10px;
+	text-align: center;
 }
 .typing .typing-p p{
 	width: max-content;
@@ -166,9 +173,6 @@ li.divider-right{
 				 Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 }
 /*其他技能*/
-.other-skills{
-
-}
 .other-skills h3{
 	font-family: Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 	font-size: 18px;
@@ -182,7 +186,9 @@ li.divider-right{
 
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
-  
+	.avatar{
+		display: none;
+	}
 }
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
