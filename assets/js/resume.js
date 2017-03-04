@@ -192,7 +192,7 @@ $(function(){
 		$typing.addClass( "myhover");
 		$resume.addClass("myhover");
 		$tpp.hide(300,function(){
-			$(this).html("嗯，有模有样了，接下来我们把HR大大们关心的“个人技能”提前显示，以便一眼就能看到。").show(300);
+			$(this).html("嗯，有模有样了，接下来我们把大大们关心的“个人技能”提前显示，以便一眼就能看到。").show(300);
 		});
 		step++;
 	}
