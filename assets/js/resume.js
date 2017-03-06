@@ -38,7 +38,6 @@ $(function(){
 	if($(window).width()<769){
 		showFinal();
 	}else{
-		$tpan.hide();
 		$typing.addClass( "col-md-offset-5 myhover");
 	}
 	
