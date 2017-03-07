@@ -126,6 +126,8 @@ a:focus {
 	padding: .2em .8em;
 }
 .typing .typing-a .next{
+	box-sizing: content-box;
+	width: 3em;
 	width: max-content;
 }
 .typing .typing-a a::before,.typing .typing-a a::after{
