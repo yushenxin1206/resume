@@ -58,10 +58,10 @@ a:focus {
 .resume{
 	background: #fff;
 	padding: 30px;
-	transition: all .6s;
+	transition: all .6s; 
 }
 .resume.myhover{
-	transform: scale(.8) translate(-25%,-15%);
+	transform: scale(.8) translate3d(-25%,-15%,0);
 	filter: blur(2px);
 }
 .resume hr.divider{
@@ -94,7 +94,7 @@ a:focus {
 }
 
 .typing.myhover{
-	transform: scale(1.5) translateX(-25%);
+	transform: scale(1.5) translate3d(-25%,0,0);
 }
 .typing .typing-p{
 	flex: 3;
