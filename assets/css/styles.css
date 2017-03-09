@@ -2,11 +2,8 @@
  * Template Name: Developer - Responsive Website Template for Developers
  * Version: 1.5
  * Author: Xiaoying Riley
- * Twitter: @3rdwave_themes
- * License: Creative Commons Attribution 3.0 License
- * Website: http://themes.3rdwavemedia.com/
- * 
- * ReEdit by Zhou Tao
+ 
+ * ReEdit by Zhou Tao 
 */
 /* ======= Base ======= */
  body {
@@ -62,6 +59,7 @@ a:focus {
 }
 .resume.myhover{
 	transform: scale(.8) translate3d(-25%,-15%,0);
+	transform-style: preserve-3d;	
 	filter: blur(2px);
 }
 .resume hr.divider{
@@ -90,11 +88,12 @@ a:focus {
 	background-color: #002b36;
 	background-clip: content-box;
 	padding-left: 30px;
-	transition: all .6s;
+	transition: all .6s; 
 }
 
 .typing.myhover{
 	transform: scale(1.5) translate3d(-25%,0,0);
+	transform-style: preserve-3d;/*修复半个像素问题*/
 }
 .typing .typing-p{
 	flex: 3;
@@ -118,7 +117,6 @@ a:focus {
 .typing .typing-a a{
 	padding: .2em .4em;
 	text-decoration: none;
-	transition: none;
 	position: relative;
 	transition: all .5s;
 }
