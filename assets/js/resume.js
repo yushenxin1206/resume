@@ -276,7 +276,7 @@ $(function(){
 		$typing.removeClass("myhover");
 		$resume.removeClass("myhover");
 		
-		$(".next").html("完成");
+		$(".next").html("完成").css("width","2em");
 		step++;
 	}
 	
